@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(195, 229, 236)
+}
+h1.steve{
+    color: blue;
+    text-align: center;
+    display:block
+    
+    
+}
+h1.steve::before{
+    content: "S";
+    color: black;
+    font-size:50px
+
+}
+a.stevejobs{
+    color: blue;
+/*hoover*/
+}
+a.stevejobs:hover{
+    background-color: yellow;
+    color: red;
+}
+/*Sección con 50 píxeles de margen tanto arriba como abajo*/
+section.bloque{
+    text-align: center;
+    margin: 50px;
+}
+/*Primera línea de parrafo en color rojo*/
+p.jobs::first-line {
+    color: red;   
+}
+p.jobs::before{
+    content: counter(contador) "."; 
+    counter-increment: contador;
+}
+/*enlaces, link y visited*/
+a.enlace:link {
+    background-color: white;
+    color: blue;
+}
+a.enlace:visited{
+    background-color: blue;
+    color: white;
+}
+/*Contador párrafos de productos*/
+h4{
+    counter-reset: prueba;
+}
+p.productos::before{
+    content: counter(prueba) ".";
+    counter-increment: prueba;
+}
+/*Foto steve jobs*/
+img.foto{
+    height: 300px;
+    width: 300px;
+    float: right;
+}
