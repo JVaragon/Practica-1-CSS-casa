@@ -44,10 +44,7 @@ a.enlace:visited{
     background-color: blue;
     color: white;
 }
-/*Contador párrafos de productos*/
-h4{
-    counter-reset: prueba;
-}
+
 p.productos::before{
     content: counter(prueba) ".";
     counter-increment: prueba;
