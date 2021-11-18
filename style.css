@@ -32,8 +32,8 @@ p.jobs::first-line {
     color: red;   
 }
 p.jobs::before{
-    content: counter(contador) "."; 
-    counter-increment: contador;
+    content: "1. "; 
+    
 }
 /*enlaces, link y visited*/
 a.enlace:link {
