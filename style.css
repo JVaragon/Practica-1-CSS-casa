@@ -45,6 +45,10 @@ a.enlace:visited{
     color: white;
 }
 
+h3 {
+    counter-reset:prueba;
+}
+
 p.productos::before{
     content: counter(prueba) ".";
     counter-increment: prueba;
